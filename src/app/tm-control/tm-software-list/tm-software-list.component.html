@@ -1,0 +1,19 @@
+<div *ngIf="softwareList.length" style="justify-content: center; align-items: row; display: flex; flex-direction: column;" >
+
+    <mat-form-field>
+      <mat-label>Wybierz automat biletowy</mat-label>
+      <mat-select [(value)]="selectedSoftware">
+        <mat-option *ngFor="let software of softwareList" [value]="software.id">
+          {{software.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div style="padding:0px,30px;justify-content: center; align-items: center; display: flex; margin: 10px; margin-top: -10px">
+      <button [disabled]="selectedSoftware==0"
+       (click)="changeSoftware()"
+        mat-raised-button color="primary"
+        style="width:60%">Zmień</button>
+    </div>
+</div>
+
+

@@ -1,0 +1,5 @@
+
+<mat-card style="width: 250px; display: flex">
+    <app-tm-status [status]="status" [name]="name" style="padding: 30px;"></app-tm-status>
+    <app-tm-software-list (selectedSoftwareEvent)="changeSoftware($event)" [softwareList]="softwareList"></app-tm-software-list>
+</mat-card>
