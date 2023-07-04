@@ -1,5 +1,6 @@
-<div *ngIf="softwareList.length" style="justify-content: center; align-items: row; display: flex; flex-direction: column;" >
+<!-- wybór wersji oprogramowania dostępnego do uruchomienia na automacie biletowym -->
 
+<div *ngIf="softwareList.length" style="justify-content: center; align-items: row; display: flex; flex-direction: column;" >
     <mat-form-field>
       <mat-label>Wybierz automat biletowy</mat-label>
       <mat-select [(value)]="selectedSoftware">

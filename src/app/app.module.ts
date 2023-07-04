@@ -13,6 +13,8 @@ import {NgModel} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon'
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import {MatButtonModule} from '@angular/material/button';
     TmSoftwareListComponent
   ],
   imports: [
+    HttpClientModule,
     MatSelectModule,
     MatButtonModule,
     MatCardModule,
@@ -29,7 +32,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatRadioModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatProgressSpinnerModule
   ],
   providers: [NgModel],
   bootstrap: [AppComponent]

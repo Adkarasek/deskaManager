@@ -10,17 +10,24 @@ export class AppComponent {
   title = 'DeskaFront';
   addresses:TmAddress[]=[{
     name: "ubuntu20",
-    address:"192.168.49.91"
+    address:"192.168.146.91"
   },{
-    name: "ubuntu18",
-    address:"192.168.49.92"
+    name: "92",
+    address:"192.168.146.92"
   },{
-    name: "ubuntu16",
-    address:"192.168.49.93"
+    name: "93",
+    address:"192.168.146.93"
   },{
-    name: "ubuntu12",
-    address:"192.168.49.94"
+    name: "94",
+    address:"192.168.146.94"
+  },{
+    name: "95",
+    address:"192.168.146.95"
+  },{
+    name: "96",
+    address:"192.168.146.96"
   }
+
 
   ]
 }

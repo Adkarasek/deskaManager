@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { SoftwareInfo } from 'src/app/aggregations/softwareInfo';
+import { SoftwareInfo } from '../../aggregations/SoftwareInfo';
 
 @Component({
   selector: 'app-tm-software-list',
@@ -9,9 +9,11 @@ import { SoftwareInfo } from 'src/app/aggregations/softwareInfo';
 export class TmSoftwareListComponent {
   @Input() softwareList: SoftwareInfo[]
   @Output() selectedSoftwareEvent=new EventEmitter<number>()
-  // wybrany numer do przesłania do żądania
+  // wybrany identyfikator do przesłania do żądania
   selectedSoftware: number = 0
 
+
+  //event do żądania zmieniającego software na desce
   changeSoftware():void{
     this.selectedSoftwareEvent.emit(this.selectedSoftware)
   }

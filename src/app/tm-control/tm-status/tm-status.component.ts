@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class TmStatusComponent {
   @Input() status:boolean
   @Input() name:string
+  @Input() loading:boolean
 }
